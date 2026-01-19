@@ -1,0 +1,6 @@
+{
+  "name": "federal-api-vault",
+  "version": "0.1.0",
+  "description": "Unified automation engine for SAM.gov, SBA, IRS, and DOL.",
+  "modules": ["sam", "sba", "irs", "dol", "workflows"]
+}
