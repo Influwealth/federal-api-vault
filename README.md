@@ -1,8 +1,24 @@
-# Federal API Repository (WealthBridge OS)
-**Profile:** https://github.com/Influwealth
-**Target APIs:** SBS, SBA, SAM.gov, IRS, DOL
+# Federal API Vault (WealthBridge OS)
 
-## Structure
-- /docs/specs: OpenAPI/Swagger JSON/YAML files.
-- /endpoints: Quick-reference MD files for core routes.
-- /scripts: Automation for token refreshing and data fetching.
+A small, teachable repo that groups helpers for U.S. federal systems:
+**SAM.gov**, **SBA**, **IRS**, **DOL**.
+
+This is intentionally lightweight and “capsule-ready” for agent runtimes (DeepFlex / Gemini CLI / n8n).
+
+## Repo Layout
+
+- `sam/` — SAM.gov helpers (payload shaping, entity status normalization)
+- `sba/` — opportunity extraction helpers
+- `irs/` — lightweight validation helpers (ex: EIN)
+- `dol/` — workforce/WOTC placeholders
+- `workflows/` — orchestration entrypoints (nightly sync, scans, refresh)
+- `docs/` — notes/specs (optional)
+- `endpoints/` — endpoint references (optional)
+
+## Install (Termux / Linux / macOS)
+
+```bash
+cd ~/WealthBridge/Console/Storage/federal-api-vault
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
