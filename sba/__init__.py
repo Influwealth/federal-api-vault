@@ -1,4 +1,4 @@
-"""
-sba module for Federal API Vault.
-Keep modules small and composable.
-"""
+"""SBA module for Federal API Vault."""
+from .client import SBAOpportunitiesAPI, extract_opportunities, SBACertificationChecker
+
+__all__ = ["SBAOpportunitiesAPI", "extract_opportunities", "SBACertificationChecker"]
