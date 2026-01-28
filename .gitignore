@@ -8,3 +8,6 @@ __pycache__/
 venv/
 logs/
 .DS_Store
+
+# local Gemini workspace
+.gemini/
